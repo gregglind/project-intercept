@@ -1,9 +1,53 @@
 {
-  "name": "abouttochrome",
-  "title": "abouttochrome",
-  "id": "jid1-sXiceDI4qXwxmw",
-  "description": "a basic add-on",
-  "author": "",
+  "name": "intercept",
+  "title": "intercept",
+  "id": "intercept@ua.mozilla.com",
+  "description": "intercept user-testing addon",
+  "author": "Gregg Lind <glind@mozilla.com>",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "0.1",
+  "preferences": [
+    {
+      "name": "bannermessage",
+      "title": "Msg in the banner",
+      "description": "Main text of the bar",
+      "type": "string",
+      "value": "We've noticed you're about to download another browser.  Mind telling us why?"
+    },
+    {
+      "name": "priority",
+      "title": "Priority",
+      "description": "interesting at 1, 4, 7 ",
+      "type": "integer",
+      "value": 4
+    },
+    {
+      "name": "icon",
+      "title": "Icon to use",
+      "description": "will get it from:  chrome://global/skin/notification.css",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "buttons",
+      "title": "Button names",
+      "description": "list of objs.... ",
+      "type": "string",
+      "value": "Problems with Video | Firefox is Slow | Something Else"
+    },
+    {
+      "name": "outlink",
+      "title": "Outbound link",
+      "description": "list of objs.... ",
+      "type": "string",
+      "value": "http://www.surveygizmo.com/s3/1819461/Help-Improve-Firefox"
+    },
+    {
+      "name": "regex",
+      "title": "Page regex",
+      "description": "pages that will trigger the bar.  Wildcard style",
+      "type": "string",
+      "value": "https://www.google.com/chrome/?"
+    }
+  ]
 }
