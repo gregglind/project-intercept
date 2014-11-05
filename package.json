@@ -1,11 +1,11 @@
 {
-  "name": "intercept",
-  "title": "intercept",
-  "id": "intercept@ua.mozilla.com",
-  "description": "intercept user-testing addon",
+  "name": "search-enhance",
+  "title": "Search Enhance",
+  "id": "search-enhance@ua.mozilla.com",
+  "description": "search-enhance user-testing addon",
   "author": "Gregg Lind <glind@mozilla.com>",
   "license": "MPL 2.0",
-  "version": "0.1",
+  "version": "0.2.1",
   "preferences": [
     {
       "name": "bannermessage",
@@ -48,6 +48,13 @@
       "description": "pages that will trigger the bar.  Wildcard style",
       "type": "string",
       "value": "https://www.google.com/chrome/?"
+    },
+    {
+      "name": "dumpsettings",
+      "title": "Dump Settings to a page",
+      "label": "jsonify settings",
+      "description": "press will opens current settings in a page",
+      "type": "control"
     }
   ]
 }
