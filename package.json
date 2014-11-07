@@ -5,8 +5,15 @@
   "description": "search-enhance user-testing addon",
   "author": "Gregg Lind <glind@mozilla.com>",
   "license": "MPL 2.0",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "preferences": [
+    {
+      "name": "showbanner",
+      "title": "Pop a Banner!",
+      "label": "pop",
+      "description": "Banner with Current Settings",
+      "type": "control"
+    },
     {
       "name": "bannermessage",
       "title": "Msg in the banner",
