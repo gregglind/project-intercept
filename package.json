@@ -5,7 +5,7 @@
   "description": "search-enhance user-testing addon",
   "author": "Gregg Lind <glind@mozilla.com>",
   "license": "MPL 2.0",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "preferences": [
     {
       "name": "showbanner",
@@ -55,7 +55,7 @@
       "title": "Page regex",
       "description": "pages that will trigger the bar.  Wildcard style",
       "type": "string",
-      "value": "https://www.google.com/chrome/"
+      "value": "https?://www.google.com/chrome/?.*"
     },
     {
       "name": "dumpsettings",
